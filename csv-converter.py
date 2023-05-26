@@ -25,12 +25,12 @@ def extract_columns_from_excel(input_file, column_names):
     return column_data
 
 
-input_file = 'input.xlsx'
+input_file = 'input.xlsx' #enter your excel file name
 column_names = ['Column1','Column2','Column3']#here you can add your column names
 
 column_data = extract_columns_from_excel(input_file, column_names)
 
-output_file = 'output.csv'
+output_file = 'output.csv' #enter your csv output file name 
 with open(output_file, 'w', newline='') as csv_file:
     writer = csv.writer(csv_file)
     writer.writerows(column_data)
